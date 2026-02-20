@@ -37,4 +37,4 @@ jobs:
       - name: Push Docker image
         if: github.ref == 'refs/heads/main'   # Only push on main branch
         run: |
-          docker push rakesh2400032026myapp:${{ github.sha }}
+          docker push rakesh2400032026/myapp:${{ github.sha }}
